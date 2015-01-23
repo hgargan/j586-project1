@@ -25,6 +25,10 @@ a {
     color: inherit;
 }
 
+li {
+    list-style-type: none;
+}
+
 h1 {
     font-size: 2em;
     font-weight: 300;
@@ -135,14 +139,22 @@ input {
 }
 
 .sidebar-left {
-    height: 600px;
     border: 1px solid #bbb;
     border-top: none;
+    color: #2293ed;
     
 }
 
+.sidebar-left li {
+    padding: 1em 0 1em 0;
+    border-bottom: 1px solid #bbb;
+    
+}
+    
+
+
 .main-content {
-    height: 600px;
+    height: auto;
     border: 1px solid #bbb;
     border-top: none;
     border-left: none;
