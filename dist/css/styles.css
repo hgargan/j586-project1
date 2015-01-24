@@ -143,6 +143,7 @@ input {
     border: 1px solid #bbb;
     height: 2.5em;
     padding: .5em 0 .8em .8em;
+    overflow: hidden;
     
 }
 
@@ -156,7 +157,7 @@ input {
 .sidebar-left {
     border: 1px solid #bbb;
     border-top: none;
-    color: #222;
+    color: #2293ed;
     padding: 0;
     
 }
@@ -165,7 +166,13 @@ input {
     padding: .3em 0 .5em 1em;
     border-bottom: 1px solid #bbb;
     line-height: ;
+    color: #222;
     
+}
+
+.sidebar-left h1 {
+    text-indent: .7em;
+    color: #22
 }
     
 
@@ -180,7 +187,12 @@ input {
 
 .nested-box {
     margin: 15px;
-    height: 50%;
+    height: ;
+    border: 1px solid black;
+    width: auto;
+    padding: 2em;
+    text-align: center;
+    float: center;
     
 }
 
@@ -188,7 +200,7 @@ input {
     background-color: #2293ed;
     color: white;
     padding: 1em 3em 1em 3em;
-    margin: 2em 0 2em 2em;
+    margin: 2em 0 1em 1em;
     float: center;
     width: 92%;
     line
