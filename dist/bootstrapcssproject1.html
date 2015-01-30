@@ -25,7 +25,12 @@
   <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
-
+<style>    
+    @font-face {
+    font-family: myriadH1;
+    src: url(fonts/myriad-pro/MYRIADPRO-REGULAR.OTF);
+}
+</style>
 
 </head>
 
@@ -40,24 +45,25 @@
         </div>
         <div class="row">
             <div class="col-xs-12 header icon-nav">
-                <li>icon 1</li>
-                <li>icon 2</li>
-                <li>icon 3</li>
-                <li>icon 4</li>
-                <li>icon 5</li>
-                <li>icon 6</li>
+                <li><a href="#"><img src="images/Application-Dashboard.png"/></a></li>
+                <li><a href="#"><img src="images/customersactive.png"/></a></li>
+                <li><a href="#"><img src="images/messagesactive.png"/></a></li>
+                <li><a href="#"><img src="images/promotionsactive.png"/></a>/li>
+                <li><a href="#"><img src="images/pagecreatoractive.png"/></a></li>
+                <li><a href="#"><img src="images/analyticsactive.png"/></a></li>
             </div>
         </div>
     <div class="container"> 
         <div class="row">
             <div class="col-xs-12 col-sm-8 page-title"><h1>Dashboard</h1></div>
-            <div class="col-xs-12 col-sm-4 search-box"><form><input type="text" name="search" align="right" value="search"></form></div>
+            <div class="col-xs-12 col-sm-4 search-box"><form><input type="text" name="search" align="right">
+                <img class="search-icon" src="images/searchicon.png" ></form></div>
         </div>
         <div class="content">   
             <div class="row">
                 <div class="col-xs-4 col-md-2 announcements-title">ANNOUNCEMENTS</div>
                 <div class="col-xs-8 col-md-9 announcements">Dummy announcement herey herey herey This is a dummy announcement</div>
-                <div class="col-xs-0 col-md-1 announcements-nav"> < > </div> 
+                <div class="col-xs-0 col-md-1 announcements-nav"><img src="images/announcementicons.png"/></div> 
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-4 sidebar-left">
@@ -76,6 +82,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-8 main-content"><h1>Analytics</h1>
+                    <img src="images/activitygraph.png"/>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 nested-box">Influencers</div>
                         <div class="col-xs-12 col-sm-6 nested-box">Customers</div>
