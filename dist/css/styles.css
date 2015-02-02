@@ -36,6 +36,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #000;
 }
 
 li {
@@ -55,6 +56,10 @@ h2 {
 
 }
 
+form {
+    background-image: url('images/searchicon.png');
+}
+
 .top-toolbar {
     background-color: #2293ed;
     border: none;
@@ -62,7 +67,7 @@ h2 {
     font-weight: 500;
     color: white;
     height: 2em;
-    padding: 0 6em 0 0;
+    padding: 0 6em 0 6em
     
 }
     
@@ -72,6 +77,7 @@ h2 {
     padding: 0 1em 0 0;
     font-size: .85em;
     line-height: 2.4em;
+    margin-left: .8em;
     
 }
 
@@ -182,8 +188,22 @@ input {
     
 }
 
+/* The icons for recommendations
+
+.article-icon {
+    list-style-image: url("../images/articleicon.jpg");
+    
+}
+
+.checklist-icon {
+    list-style-image: url("../images/checklisticon.png");
+}
+
+.tip-icon {
+    list-style-image: url("../images/tipicon.jpg"); */
+}
+
 .sidebar-left ul {
-    list-style-image: url("images/articleicon.jpg");
 }
 
 .sidebar-left h1 {
@@ -194,8 +214,17 @@ input {
 #recommendations {
     padding-bottom: 19.9em;
     border: none;
+    line-height: 1em;
 }
 
+#recommendations img {
+    margin: .2em .5em 0 0;
+}
+
+#recommendations li {
+    padding: 1em 0 1em 1em;
+    border-bottom: 1px dotted #eee;
+}
 
 .main-content {
     height: auto;
@@ -218,13 +247,22 @@ input {
 .nested-box {
   text-align: center;
   padding-top: 2em;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 1em;
  
 }   
 .did-you-know {
-    height: 20em;
     background-color: #fff;
-    background-image: url('images/dykbg.jpg');
-    margin: 0 0 0 2.5em;
+    background-image: url('../images/dykbg.jpg');
+    margin: 1.5em 0 0 2.2em;
+    background-repeat: no-repeat;
+    height: 10em;
+    color: white;
+    padding: 2em 3em 6em 3em;
+    float: center;
+    border: none;
+    
     
 }
 
@@ -241,11 +279,21 @@ input {
 
 .footer {
     width: 100%;
-    border-top: 1px solid ;
+    border-top: 1px solid #eee;
     background-color: #f7f7f7; 
     margin-top: 4em;
-    padding: 2em 4em 2em 4em;
+    padding: 2em 2em 2em 4em;
     text-align: center;
+    color: #aaa;
+    box-shadow: 0 0 0 4px #bbb;
+    border-radius: 0 0 0 5px;
 
 }
 
+.footer li {
+    display: inline;
+    list-style-type: none;
+    padding: 2em;
+    border-right: 1px solid #bbb;
+
+}
