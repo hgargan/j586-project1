@@ -1,15 +1,7 @@
-
-    
-}
-.container {
-    width: 73%;
-    border: 5px #eee;
-    padding: 5px;
-
-    
-}
-
-
+/* I've annotated areas where I know the code isn't correct or a perfect match
+ * for the photoshop file. There are also many areas where the mobile version looks awful.
+ * I'm sure we'll go over a lot of this in class, but
+ * I do want to get better/uncover the mysteries behind some of what I struggled with. */
 
 @font-face {
     font-family: myriadH1;
@@ -23,86 +15,70 @@ body {
 
 a {
     color: inherit;
-    
 }
-
 a:hover {
     text-decoration: none;
     color: #000;
 }
-
 li {
     list-style-type: none;
 }
-
 h1 {
     font-size: 2em;
     font-weight: 300;
     font-family: 'myriadH1', sans-serif;
     color: #2293ed;
 }
-    
 h2 {
     font-size: 1.4em;
     color: #2293ed;
-
 }
-
-form {
-    background-image: url('images/searchicon.png');
+.container {
+    width: 73%;
+    border: 5px #eee;
+    padding: 5px;
 }
-
 .top-toolbar {
     background-color: #2293ed;
     border: none;
     text-align: right;
     font-weight: 500;
+    font-size: 1.1em;
     color: white;
-    height: 2em;
-    padding: 0 6em 0 6em
-    
-}
-    
+    height: 3em;
+    padding: .5em 6em 0 0;   
+}    
 .top-toolbar li {
     display: inline;
     list-style-type: none;
     padding: 0 1em 0 0;
     font-size: .85em;
     line-height: 2.4em;
-    margin-left: .8em;
-    
+    margin-left: .8em;    
 }
 
+/* I really wish I had more time to work on this, but I couldn't get the roll-over to work
+ * partly because I couldn't figure out how to isolate the blue icons as pngs to put into a sprite.
+ * Was there a layer/folder for this on the psd document that I totally missed? I looked hard!
+ */
 .icon-nav {
     display: inline;
     text-align: center;
-    height: 7.2em;
+    height: 7.7em;
     width: 100%;
-    background-color: #11355D;
-    padding-top: 1em;
-    background-image: url('../images/navbarbackground/jpg');
-   
+    background-color: #0D4769;
+    padding-top: 1.53em;
+    background-image: url('../images/navbarbottom_02.jpg');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-position: bottom center;
 }
-
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    
-    border-bottom: 15px solid white;
-    position: absolute;
-    left: 386px;
-    top: 87px;
-}
-
 .icon-nav li {
     display: inline;
     list-style-type: none;
-    padding: 1em;
+    padding: 1.27em;
     scale: 80%;
 }
-
 .page-title {
     background-color: #33cc66;
     height: 3.6em;
@@ -111,16 +87,12 @@ form {
     border-radius: 3px 0 0 3px;
     margin: .8em 0 .8em 0;
     padding-top: -5em;
-    
 }
-
 .page-title h1 {
     vertical-align: middle;
     line-height: .45em;
     color: white;
-    
 }
-
 .search-box {
     background-color: #33cc66;
     height: 3.6em;
@@ -130,20 +102,28 @@ form {
     padding: 1em 1em 0em 0;
     text-align: right;
 }
-
 input {
-    height: 1.8em;
+    height: 2em;
     border-radius: 3px;
     width: 75%;
     text-align: right;
-    padding: 0 .3em 0 0;
+    padding: 0 2.5em 0 0;
     border: none;
+    background-image: url('../images/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 97% 50%; 
 }
 
-.content {
- 
-}
+/* So right here is where I tried to do the sort of gray border that goes around
+ * most of the main content. For whatever reason, some of the content poked out from
+ * underneath the border, so I decided it looked better to forgo it. I'd love to learn
+ * about whatever property I could have used to fix this. Here's what the code looked like:
 
+.content{
+    border: 10px 10px 0 10px solid #eee;
+    border-radius: 5px;
+}
+*/
 
 .announcements-title {
     border: 1px solid #eee;
@@ -152,8 +132,7 @@ input {
     color: orange;
     padding: .5em .8em .8em .8em;
     text-align: center;
-    font-size: .85em;
-    
+    font-size: .85em;    
 }
 
 .announcements {
@@ -168,10 +147,9 @@ input {
 .announcements-nav {
     border: 1px solid #eee;
     border-left: none;
-    height: 2.1em;
+    height: 2.14em;
     padding: .2em 1.25em 0em .8em;
     text-align: center;
-    
 }
 
 .sidebar-left {
@@ -180,109 +158,84 @@ input {
     border-bottom: none;
     color: #2293ed;
     padding: 0;
-    
 }
-
 .sidebar-left li {
     padding: .3em 0 .5em 1em;
     border-bottom: 1px solid #eee;
     line-height: ;
     color: #222;
-
-    
 }
-
-/* The icons for recommendations
-
-.article-icon {
-    list-style-image: url("../images/articleicon.jpg");
-    
-}
-
-.checklist-icon {
-    list-style-image: url("../images/checklisticon.png");
-}
-
-.tip-icon {
-    list-style-image: url("../images/tipicon.jpg"); */
-}
-
-.sidebar-left ul {
-}
-
 .sidebar-left h1 {
     text-indent: .7em;
     color: #22
 }
-    
 #recommendations {
     padding-bottom: 13em;
     border: none;
     line-height: 1em;
     color: #bbb;
 }
-
 #recommendations img {
     margin: .2em .5em 0 0;
 }
-
 #recommendations li {
     padding: 1em 0 1em 1em;
     border-bottom: 1px dotted #eee;
     color: #999;
 }
-
 .main-content {
     height: auto;
     border: 1px solid #eee;
     border-top: none;
-    border-left: none;
-    
+    border-left: none;   
 }
-
 .image-wrapper {
     position: relative;
 }
-    
 .scale-image {
     display:block;
     width: auto;
     max-width: 95%;
 }
-
 .nested-box {
   text-align: center;
   padding-top: 2em;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-top: 1em;
- 
 }   
 .did-you-know {
     background-color: #fff;
     background-image: url('../images/dykbg.jpg');
-    margin: 1.5em 0 2.2em 2.2em;
+    margin: 1.5em 0 2.24em 2.2em;
     background-repeat: no-repeat;
     height: 10em;
     color: white;
-    padding: 2em 0em 2em 3em;
+    padding: 2em 3em 1em 3em;
     float: center;
     border: none;
     width: 90%;
-    
-    
 }
-
+.did-you-know p {
+    padding: 0 2em 1em 2em;
+    float: center;
+}
 .banner-bottom {
     height: 15em;
     background-color: #2293ed;
     padding: 1.5em 1em 1em 1.5em;
 }
-
+/* This slice had a head sticking out, meaning I had to align it separately.
+It would have looked way better on smaller screen sizes if I could have centered everything,
+but this element's absolute positioning sort of hamstrung me in that regard. */
 #promo2 {
     position: absolute;
-    top: 10px; 
+    top: 10px;
 }
+
+/* Okay, holy cow. Here, you'll see me going crazy trying to figure out how to get
+ * those separating lines down on the footer bar. I was not exactly successful, but
+ * I promise I tried FOREVER.*/
 
 .footer {
     width: 100%;
@@ -295,56 +248,41 @@ input {
     border-radius: 0px 0px 0 20px;
     box-shadow: rgba(0,0,0,0.5) 0 0 15px;
     border-collapse: collapse;
-
-
 }
-
 .footer li {
     display: inline;
     list-style-type: none;
     padding: 0 2em 0 0;
-    
-
 }
-
-
 .footer a {
     color: #2293ed;
 }
-
 .footer-links li {
     border-right: 1px solid #ddd;
     text-align: center;
     padding: 0em .3em 0em .5em;
     color: #ddd
 }
-
 .footer-links a {
     color: #bbb;
 }
-
 div.col-xs-12.col-sm-3.footer-links {
     height: 100%;
     border-right: 1px solid #aaa;
     padding-top: 1em;
-    padding-bottom: 1.2em;
+    padding-bottom: .5em;
 }
-
 div.col-xs-12.col-sm-6.social-ticker {
     height: 100%;
     border-right: 1px solid #aaa;
     padding-top: 1em;
-    padding-bottom: 1.2em;
+    padding-bottom: .5em;
     margin-top: 0em;
     
 }
-
 div.col-xs-12.col-sm-3 {
     height: 100%;
-    border-right: 1px solid #aaa;
+    border-right: 0px solid #aaa;
     padding-top: 1em;
-    padding-bottom: 1.2em;
-
+    padding-bottom: .5em;
 }
-
-
